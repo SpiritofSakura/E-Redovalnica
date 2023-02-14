@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="353.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.profil">
+    <top>
+        <AnchorPane prefHeight="60.0" prefWidth="383.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="button_nazaj" layoutX="8.0" layoutY="11.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="45.0" style="-fx-background-color: transparent; -fx-cursor: hand;">
+               <graphic>
+                        <ImageView fx:id="slika" fitHeight="34.0" fitWidth="34.0" layoutX="14.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@back-icon.png" />
+                            </image>
+                        </ImageView>
+               </graphic></Button>
+                <Label layoutX="63.0" layoutY="6.0" prefHeight="29.0" prefWidth="171.0" text="Moj Profil" textFill="#001dff">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                    </font>
+                </Label>
+                <Separator layoutX="58.0" layoutY="32.0" prefHeight="0.0" prefWidth="296.0" />
+            <Separator layoutX="57.0" layoutY="1.0" orientation="VERTICAL" prefHeight="60.0" prefWidth="0.0" />
+            <Separator layoutX="58.0" layoutY="58.0" prefHeight="0.0" prefWidth="297.0" />
+                <Label layoutX="63.0" layoutY="35.0" prefHeight="26.0" prefWidth="293.0" text="Vaši podatki:">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                    </font>
+                </Label>
+            <Separator layoutX="352.0" layoutY="2.0" orientation="VERTICAL" prefHeight="60.0" prefWidth="0.0" />
+            </children>
+        </AnchorPane>
+    </top>
+   <center>
+        <AnchorPane prefHeight="285.0" prefWidth="373.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="70.0" layoutY="95.0" prefHeight="21.0" prefWidth="97.0" text="Username:">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="15.0" />
+                    </font>
+                </Label>
+                <Separator layoutX="153.0" layoutY="112.0" prefHeight="0.0" prefWidth="191.0" />
+                <Label layoutX="70.0" layoutY="136.0" prefHeight="21.0" prefWidth="59.0" text="Email:">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="15.0" />
+                    </font>
+                </Label>
+                <Separator layoutX="118.0" layoutY="153.0" prefHeight="0.0" prefWidth="229.0" />
+                <Label layoutX="70.0" layoutY="186.0" prefHeight="21.0" prefWidth="64.0" text="Telefon:">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="15.0" />
+                    </font>
+                </Label>
+                <Separator layoutX="131.0" layoutY="203.0" prefHeight="0.0" prefWidth="216.0" />
+                <Label fx:id="text_username" layoutX="154.0" layoutY="95.0" prefHeight="20.0" prefWidth="191.0">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="15.0" />
+                    </font>
+                </Label>
+                <Label fx:id="text_email" layoutX="119.0" layoutY="136.0" prefHeight="20.0" prefWidth="230.0">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="15.0" />
+                    </font>
+                </Label>
+                <Label fx:id="text_telefon" layoutX="132.0" layoutY="183.0" prefHeight="27.0" prefWidth="216.0">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="15.0" />
+                    </font>
+                </Label>
+                <Separator layoutX="103.0" layoutY="32.0" prefHeight="0.0" prefWidth="243.0" />
+                <Label layoutX="70.0" layoutY="14.0" prefHeight="23.0" prefWidth="37.0" text="Ime:">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="15.0" />
+                    </font>
+                </Label>
+                <Label fx:id="text_ime" layoutX="103.0" layoutY="14.0" prefHeight="23.0" prefWidth="242.0">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="15.0" />
+                    </font>
+                </Label>
+                <Separator layoutX="130.0" layoutY="72.0" prefHeight="0.0" prefWidth="215.0" />
+                <Label layoutX="70.0" layoutY="54.0" prefHeight="23.0" prefWidth="63.0" text="Priimek:">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="15.0" />
+                    </font>
+                </Label>
+                <Label fx:id="text_priimek" layoutX="131.0" layoutY="54.0" prefHeight="23.0" prefWidth="214.0">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="15.0" />
+                    </font>
+                </Label>
+            <Separator layoutX="56.0" layoutY="-10.0" orientation="VERTICAL" prefHeight="231.0" prefWidth="0.0" />
+            <Separator layoutX="58.0" layoutY="218.0" prefHeight="0.0" prefWidth="294.0" />
+            <Separator layoutX="349.0" orientation="VERTICAL" prefHeight="224.0" prefWidth="7.0" />
+            <Button fx:id="button_odjava" layoutX="273.0" layoutY="242.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="74.0" text="Odjava" />
+            <Separator layoutX="56.0" layoutY="173.0" orientation="VERTICAL" prefHeight="115.0" prefWidth="0.0" />
+            </children></AnchorPane>
+   </center>
+</BorderPane>

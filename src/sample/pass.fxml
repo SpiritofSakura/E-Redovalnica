@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="377.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.PasswordReset">
+    <children>
+        <AnchorPane prefHeight="143.0" prefWidth="377.0">
+            <children>
+                <ImageView fitHeight="183.0" fitWidth="209.0" layoutX="89.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@login-logo.jpg" />
+               </image>
+                </ImageView>
+            </children></AnchorPane>
+        <AnchorPane prefHeight="362.0" prefWidth="377.0">
+            <children>
+                <Label layoutX="67.0" layoutY="20.0" prefHeight="22.0" prefWidth="160.0" text="Vnesite Email:">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="19.0" />
+                    </font>
+                </Label>
+                <TextField id="text_username" fx:id="text_email" layoutX="67.0" layoutY="42.0" prefHeight="26.0" prefWidth="242.0" />
+                <Label fx:id="vnesi_kodo" disable="true" layoutX="68.0" layoutY="170.0" prefHeight="22.0" prefWidth="141.0" text="Vnesite kodo:">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="19.0" />
+                    </font>
+                </Label>
+                <Button fx:id="button_poslji" layoutX="201.0" layoutY="88.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="108.0" style="-fx-cursor: hand;" text="Pošlji kodo" />
+                <Button id="button_signup" fx:id="button_preveri" disable="true" layoutX="201.0" layoutY="234.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="108.0" style="-fx-cursor: hand;" text="Preveri" />
+                <PasswordField fx:id="text_koda" disable="true" layoutX="68.0" layoutY="192.0" prefHeight="26.0" prefWidth="242.0" />
+            <Separator layoutX="-1.0" layoutY="138.0" prefHeight="0.0" prefWidth="377.0" />
+            <Label fx:id="label" layoutX="134.0" layoutY="290.0" prefHeight="22.0" prefWidth="108.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="_koda" disable="true" layoutX="20.0" layoutY="289.0" prefHeight="22.0" prefWidth="116.0" text="Vaša koda:">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="19.0" />
+               </font>
+            </Label>
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>

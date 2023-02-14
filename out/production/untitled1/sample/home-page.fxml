@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="451.0" prefWidth="829.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Home">
+    <top>
+        <AnchorPane prefHeight="0.0" prefWidth="688.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="moj_profil" layoutX="7.0" layoutY="10.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="51.0" style="-fx-background-color: transparent; -fx-cursor: hand;">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@slika.png" />
+                     </image></ImageView>
+               </graphic></Button>
+                <TextField fx:id="text_priimek" layoutX="700.0" layoutY="23.0" prefHeight="26.0" prefWidth="115.0">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font></TextField>
+                <Label layoutX="639.0" layoutY="27.0" prefHeight="17.0" prefWidth="64.0" text="Priimek:">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="15.0" />
+                    </font>
+                </Label>
+                <Separator layoutY="65.0" prefHeight="10.0" prefWidth="829.0" />
+            <TextField fx:id="text_ime" layoutX="511.0" layoutY="23.0" prefHeight="26.0" prefWidth="115.0">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font>
+            </TextField>
+            <Label layoutX="475.0" layoutY="27.0" prefHeight="4.0" prefWidth="34.0" text="Ime:">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font>
+            </Label>
+            </children>
+        </AnchorPane>
+    </top>
+    <left>
+        <AnchorPane prefHeight="376.0" prefWidth="160.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="14.0" layoutY="14.0" text="Izberi letnik:" />
+                <ChoiceBox fx:id="combo_letnik" layoutX="13.0" layoutY="32.0" onMouseClicked="#letnik_klik" prefHeight="26.0" prefWidth="129.0" />
+                <Label layoutX="14.0" layoutY="84.0" text="Izberi razred:" />
+                <ChoiceBox fx:id="combo_razred" layoutX="13.0" layoutY="102.0" onMouseClicked="#razred_klik" prefHeight="26.0" prefWidth="129.0" />
+            <Button fx:id="button_izvozi" disable="true" layoutX="45.0" layoutY="329.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="65.0" text="Izvozi" />
+            </children></AnchorPane>
+    </left>
+    <center>
+        <AnchorPane prefHeight="375.0" prefWidth="677.0" BorderPane.alignment="CENTER">
+            <children>
+                <TableView fx:id="tabela" layoutX="-2.0" layoutY="-1.0" prefHeight="376.0" prefWidth="669.0">
+                    <columns>
+                        <TableColumn fx:id="row_ime" prefWidth="98.0" text="Ime" />
+                        <TableColumn fx:id="row_priimek" minWidth="0.20001220703125" prefWidth="153.0" text="Priimek" />
+                        <TableColumn fx:id="row_razred" prefWidth="112.0" text="Razred" />
+                        <TableColumn fx:id="row_ocene" prefWidth="305.0" text="Ocene" />
+                    </columns>
+                </TableView>
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>

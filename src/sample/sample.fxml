@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="377.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Prijava">
+    <children>
+        <AnchorPane prefHeight="200.0" prefWidth="378.0">
+            <children>
+                <ImageView fitHeight="182.0" fitWidth="209.0" layoutX="89.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@login-logo.jpg" />
+                    </image>
+                </ImageView>
+            </children></AnchorPane>
+        <AnchorPane prefHeight="366.0" prefWidth="378.0">
+            <children>
+                <Label layoutX="64.0" layoutY="59.0" text="Username:">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="19.0" />
+                    </font>
+                </Label>
+                <TextField id="text_username" fx:id="text_username" layoutX="64.0" layoutY="81.0" prefHeight="26.0" prefWidth="242.0" />
+                <Label layoutX="67.0" layoutY="131.0" text="Password:">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="19.0" />
+                    </font>
+                </Label>
+                <Button fx:id="button_login" layoutX="135.0" layoutY="222.0" mnemonicParsing="false" onAction="#login_click" prefHeight="26.0" prefWidth="108.0" style="-fx-cursor: hand;" text="LOGIN" />
+                <Button id="button_signup" fx:id="btn_register" layoutX="135.0" layoutY="291.0" mnemonicParsing="false" onAction="#registracija_click" prefHeight="26.0" prefWidth="108.0" style="-fx-cursor: hand;" text="REGISTER" />
+                <Label fx:id="pozabil_geslo" layoutX="67.0" layoutY="178.0" style="-fx-cursor: hand; -fx-text-fill: blue;" text="Pozabili geslo?" />
+                <PasswordField fx:id="text_password" layoutX="67.0" layoutY="153.0" prefHeight="26.0" prefWidth="242.0" />
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>
